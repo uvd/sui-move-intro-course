@@ -4,7 +4,7 @@
 
 - A Sui module is a set of functions and types packed together which the developer publishes under a specific address 
 
-- The Sui standard library is published under the `0x2` address, while user deployed modules are published under a pseodorandom address assigned by the Sui Move VM
+- The Sui standard library is published under the `0x2` address, while user deployed modules are published under a pseudorandom address assigned by the Sui Move VM
 
 - Module starts with the `module` keyword, which is followed by module name and curly braces - inside them module contents are placed:
 

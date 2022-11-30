@@ -1,4 +1,4 @@
-# Setup Development Environment
+# Set Up Development Environment
 
 ## Install Sui Binaries Locally
 
