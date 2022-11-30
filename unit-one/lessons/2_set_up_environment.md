@@ -8,11 +8,15 @@
 
 2. Install Sui binaries
     
-    `cargo install --locked --git https://github.com/MystenLabs/sui.git --branch devnet sui`
+    ```
+    cargo install --locked --git https://github.com/MystenLabs/sui.git --branch devnet sui
+    ```
 
 3. Check binaries are installed successfully:
 
-    `sui --version`
+    ```
+    sui --version
+    ```
 
     You should see the version number in the terminal if sui binaries were installed successfully. 
 
@@ -22,12 +26,16 @@
 
 2. Pull the premade Docker image for the Sui Move intro course 
 
-    `docker pull hyd628/sui-move-intro-course:latest`
+    ```
+    docker pull hyd628/sui-move-intro-course:latest
+    ```
 
 3. Start and shell into the Docker container:
 
-    `docker run --entrypoint /bin/sh -itd hyd628/sui-move-intro-course:latest`
-    `docker exec -it <container ID> bash`
+    ```
+    docker run --entrypoint /bin/sh -itd hyd628/sui-move-intro-course:latest
+    docker exec -it <container ID> bash
+    ```
 
 ## Configure VS Code with Move Analyzer Plug-in
 
@@ -35,7 +43,9 @@
 
 2. Add compatibility for Sui style wallet addresses:
 
-    `cargo install --git https://github.com/move-language/move move-analyzer --features "address20"`
+    ```
+    cargo install --git https://github.com/move-language/move move-analyzer --features "address20"
+    ```
 
 ## Sui CLI Basic Usage
 
