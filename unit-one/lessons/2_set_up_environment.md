@@ -51,14 +51,33 @@
 
 [Reference Page](https://docs.sui.io/build/cli-client)
 
-### Managing Networks
+### Set Up Devnet Network
 
-- Switching network: `sui client switch --env [network alias]`
-- Default network aliases: 
-    - localnet: http://0.0.0.0:9000
-    - devnet: https://fullnode.devnet.sui.io:443
-- List all current network aliases: `sui client envs`
-- Add new network alias: `sui client new-env --alias <ALIAS> --rpc <RPC>`
+1. Switch to the devnet network:
+
+    ```
+    sui client switch --env devnet
+    ```
+
+2. If a previous configuration file does not exist, you will be prompted to create a new one:
+
+    ```
+    Config file ["/Users/user/.sui/sui_config/client.yaml"] doesn't exist, do you want to connect to a Sui full node server [yN]?
+    ```
+
+    Respond `y` to the prompt, setting the default devnet URL and choosing a keypair type (either is OK).
+
+3. Optionally, you can list other available network environments:
+
+    ```
+    sui client envs
+    ```
+
+    Or create a new one:
+
+    ```
+    sui client new-env --alias <ALIAS> --rpc <RPC>
+    ```
 
 ### Check Active Address and Gas Objects
 
