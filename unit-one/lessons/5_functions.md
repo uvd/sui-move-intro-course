@@ -8,13 +8,13 @@ Sui Move functions have three types of visibility:
 
 - **private**: the default visibility of a function; it can only be accessed by functions inside the same module
 - **public**: the function is accessible by functions inside the same module, and by functions defined in another module
-- **public(friend)**: the function is accessible by functions inside the same module and by functions defined in modules that are included on [the module's friends list](https://diem.github.io/move/friends.html).
+- **public (friend)**: the function is accessible by functions inside the same module and by functions defined in modules that are included on [the module's friends list](https://diem.github.io/move/friends.html).
 
 ## Entry Functions
 
 In Sui Move, entry functions are simply functions that can be called by a transactions. They must satisfy the following three requirements:
 
-- Denoted by the keyword `entry`
+- be denoted by the keyword `entry`
 - have no return value
 - (optional) have a mutable reference to an instance of the `TxContext` type in the last parameter
 
@@ -29,15 +29,13 @@ The `TxContext` object contains [essential information](https://github.com/Myste
 We can define our minting function in the Hello World example as the following:
 
 ```
-    public entry fun mint(ctx: &mut TxContext) {
-        let object = HelloWorldObject {
-            id: object::new(ctx),
-            text: string::utf8(b"Hello World!")
-        };
-        transfer::transfer(object, tx_context::sender(ctx));
-    }
+public entry fun mint(ctx: &mut TxContext) {
+    let object = HelloWorldObject {
+        id: object::new(ctx),
+        text: string::utf8(b"Hello World!")
+    };
+    transfer::transfer(object, tx_context::sender(ctx));
+}
 ```
 
 This function simply creates a new instance of the `HelloWoirldObject` custom type, then uses the Sui system transfer function to send it to the transaction caller. 
-
-

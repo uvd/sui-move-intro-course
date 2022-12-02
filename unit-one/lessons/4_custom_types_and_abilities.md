@@ -6,7 +6,9 @@ In this section, we will start creating our Hello World example contract step by
 
 (If you skipped the previous section) You can initialize a Hello World Sui package with the following command in the command line after [installing Sui binaries](https://github.com/sui-foundation/sui-move-intro-course/blob/main/unit-one/lessons/2_set_up_environment.md#install-sui-binaries-locally):
 
-`sui move new hello_world`
+```
+sui move new hello_world
+```
 
 ## Create the Contract Source File
 
@@ -71,6 +73,4 @@ struct HelloWorldObject has key, store {
 }
 ```
 
-UID here is a Sui Framework type (sui::object::UID) that defines the globally unique ID of an object. Every custom type is required to have an ID field. 
-
-
+UID here is a Sui Framework type (`sui::object::UID`) that defines the globally unique ID of an object. Every custom type is required to have an ID field.

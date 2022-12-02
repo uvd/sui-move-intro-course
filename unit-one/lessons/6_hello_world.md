@@ -15,7 +15,7 @@ The Sui CLI command for deploying the package is the following:
 sui client publish --path <absolute local path to the Sui Move package> --gas-budget 30000
 ```
 
-The output should look something like this if the contract was successfully deployd:
+The output should look something like this if the contract was successfully deployed:
 
 ![Publish Output](https://github.com/sui-foundation/sui-move-intro-course/blob/main/unit-one/images/publish.png)
 
