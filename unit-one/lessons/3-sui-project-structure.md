@@ -35,7 +35,7 @@ sui move new hello_world
 ```
 
 This creates: 
-- the project root folder `hello_world`
+- the project root folder `hello-world`
 - the `Move.toml` manifest file
 - the `sources` subfolder which will contain Sui Move smart contract source files
 
@@ -80,5 +80,5 @@ Sui = { local = "../sui/crates/sui-framework" }
 - Sui Move module and package naming convention uses snake casing, i.e. `this_is_snake_casing`.
 
 - A Sui module name uses the Rust path separator `::` to divide the package name and the module name, examples:
-    1. `unit_one::hello_world` - `hello_world` module in `unit_one` package
+    1. `unit-one::hello_world` - `hello_world` module in `unit-one` package
     2. `capy::capy` - `capy` module in `capy` package

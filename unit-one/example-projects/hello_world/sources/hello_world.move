@@ -26,4 +26,3 @@ module hello_world::hello_world {
         transfer::transfer(object, tx_context::sender(ctx));
     }
 
-}
