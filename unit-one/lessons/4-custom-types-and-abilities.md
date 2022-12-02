@@ -1,4 +1,4 @@
-# Custome Types and Abilities
+# Custom Types and Abilities
 
 In this section, we will start creating our Hello World example contract step by step and explain fundamental concepts in Sui Move as they come up, such as custom types and abilities. 
 
@@ -7,7 +7,7 @@ In this section, we will start creating our Hello World example contract step by
 (If you skipped the previous section) You can initialize a Hello World Sui package with the following command in the command line after [installing Sui binaries](https://github.com/sui-foundation/sui-move-intro-course/blob/main/unit-one/lessons/2-set-up-environment.md#install-sui-binaries-locally):
 
 ```
-sui move new hello-world
+sui move new HelloWorld
 ```
 
 ## Create the Contract Source File
@@ -17,7 +17,7 @@ Use an editor of your choice to create a Move smart contract source file called 
 And create the empty module as following:
 
 ```
-module hello-world::hello {
+module helloworld::hello {
 
     // module contents
 

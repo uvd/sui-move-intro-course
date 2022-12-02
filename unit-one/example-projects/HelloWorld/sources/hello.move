@@ -4,7 +4,7 @@
 /// A basic Hello World example for Sui Move, part of the Sui Move intro course:
 /// https://github.com/sui-foundation/sui-move-intro-course
 /// 
-module hello_world::hello_world {
+module helloworld::hello {
 
     use std::string;
     use sui::object::{Self, UID};
