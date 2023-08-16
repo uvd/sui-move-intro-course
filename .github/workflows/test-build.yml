@@ -18,3 +18,7 @@ jobs:
           toolchain: stable
       - run: cargo install --locked --git https://github.com/MystenLabs/sui.git --branch devnet sui
       - run: sui -version
+      - name: build example
+      - run: scripts/check.sh
+        shell: bash
+
